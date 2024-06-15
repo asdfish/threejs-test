@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Three.js Teest</title>
+        <style></style>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://cdn.jsdelivr.net/npm/three@v0.165.0/build/three.module.js",
+                    "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.165.0/examples/jsm/"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <script type = "module">
+            import * as THREE from "three"
+
+            const scene = new THREE.Scene()
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+
+            const renderer = new THREE>WebGLRenderer()
+            renderer.setSize(window.innerWIdth, window.innerHeight)
+            document.body.appendChild(renderer.domElement)
+        </script>
+    </body>
+</html>
